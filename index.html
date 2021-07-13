@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizing Sort</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="16X16" href="favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="p-3 mb-2 color text-white">
+    <div class="container">
+        <h1 class="heading" align="center">Lets's Play it!</h1>
+        </div>
+    <nav>
+        <div class="row">
+            <div class="col gap-2 d-sm-flex" id="newArray">
+                <button type="button" class="btn btn-outline-success btn-dark newArray">Visualize new one</button>
+            </div>
+            <div class="col" id="input">
+                <span id="size">Size
+                    <input id="arr_sz" type="range" min="5" max="100" step=1 value=60>
+                </span>
+                <span id="speed">Speed
+                    <input id="speed_input" type="range" min="20" max="300" stepDown=10 value=60>
+                </span>
+            </div>
+            <div class="col gap-2 d-sm-flex justify-content-end">
+                <button type="button" class="btn btn-outline-primary btn-dark bubbleSort">Bubble Sort</button>
+                <button type="button" class="btn btn-outline-primary btn-dark selectionSort">Selection Sort</button>
+                <button type="button" class="btn btn-outline-primary btn-dark insertionSort">Insertion Sort</button>
+               <button type="button" class="btn btn-outline-primary btn-dark quickSort">Quick Sort</button>
+                <button type="button" class="btn btn-outline-primary btn-dark mergeSort">Merge Sort</button>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div id="bars" class="flex-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/sorting.js"></script>
+    <script src="js/bubble.js"></script>
+    <script src="js/insertion.js"></script>
+    <script src="js/merge.js"></script>
+    <script src="js/quick.js"></script>
+    <script src="js/selection.js"></script>
+</body>
+</html>
